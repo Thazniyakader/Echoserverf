@@ -33,3 +33,10 @@ public EchoServer(int portnum)
 				}
 				while ( !line.trim().equals("bye") );
 				client.close();
+				}
+		}
+		catch (Exception err)
+		{
+			System.err.println(err);
+		}
+	}
