@@ -9,3 +9,7 @@ public EchoServer(int portnum)
 		{
 			server = new ServerSocket(portnum);
 		}
+		catch (Exception err)
+		{
+			System.out.println(err);
+		}
