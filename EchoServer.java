@@ -13,3 +13,10 @@ public EchoServer(int portnum)
 		{
 			System.out.println(err);
 		}
+		}
+	public void serve()
+	{
+		try
+		{
+			while (true)
+			{
