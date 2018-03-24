@@ -20,3 +20,6 @@ public EchoServer(int portnum)
 		{
 			while (true)
 			{
+			Socket client = server.accept();
+				BufferedReader r = new BufferedReader(new InputStreamReader(client.getInputStream()));
+				PrintWriter w = new PrintWriter(client.getOutputStream(), true);
