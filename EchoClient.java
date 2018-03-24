@@ -14,3 +14,9 @@ public class EchoClient
 			String line;
 			do
 			{
+			    line = r.readLine();
+				if ( line != null )
+					System.out.println(line);
+				line = con.readLine();
+				w.println(line);
+            }
