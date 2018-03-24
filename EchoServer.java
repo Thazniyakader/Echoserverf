@@ -6,3 +6,6 @@ public class EchoServer
 public EchoServer(int portnum)
 	{
 		try
+		{
+			server = new ServerSocket(portnum);
+		}
